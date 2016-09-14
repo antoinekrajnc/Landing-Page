@@ -1,0 +1,301 @@
+@font-face {
+    font-family: 'Frenchpressfreefont';
+    src: url('fonts/Frenchpressfreefont.eot');
+    src: url('fonts/Frenchpressfreefont.eot') format('embedded-opentype'),
+         url('fonts/Frenchpressfreefont.woff2') format('woff2'),
+         url('fonts/Frenchpressfreefont.woff') format('woff'),
+         url('fonts/Frenchpressfreefont.ttf') format('truetype'),
+         url('fonts/Frenchpressfreefont.svg#Frenchpressfreefont') format('svg');
+}
+@font-face {
+    font-family: 'Champagne_Limousines';
+    src: url('fonts/Champagne_Limousines.eot');
+    src: url('fonts/Champagne_Limousines.eot') format('embedded-opentype'),
+         url('fonts/Champagne_Limousines.woff2') format('woff2'),
+         url('fonts/Champagne_Limousines.woff') format('woff'),
+         url('fonts/Champagne_Limousines.ttf') format('truetype'),
+         url('fonts/Champagne_Limousines.svg#Champagne_Limousines') format('svg');
+}
+
+
+
+header{
+  font-family: "Champagne_limousines";
+}
+
+body{
+  font-family: "Champagne_limousines";
+  margin:0;
+}
+
+div{
+  margin:0;
+}
+
+a {
+  text-decoration:none;
+  color:white;
+}
+
+a:hover{
+  color:lightgrey;
+}
+
+
+header {
+  background:url(img/City.png) no-repeat top center;
+  color:white;
+  background-size:cover;
+  padding:270px;
+  height:700px;
+  box-sizing:border-box;
+  text-align:center;
+}
+
+header .title {
+  margin-top:0px;
+  margin-bottom:60px;
+  padding-top:0px;
+  font-size:3.2em;
+  font-style:normal;
+  text-transform:uppercase;
+}
+
+.CTA {
+  font-family: "frenchpress";
+  font-size:2em;
+  font-weight: 500;
+  border:3px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  transition: all .5s;
+  width:250px;
+  margin: auto;
+}
+
+.CTA:hover{
+  background:rgba(255,255,255,0.1)
+}
+
+.arrow {
+  max-width:500px;
+  max-height:100px;
+  margin-top:160px;
+  margin-left:10px;
+}
+
+.main-nav{
+  background-color:rgba(0, 0, 0, 0.5);
+  margin: 0;
+  position:fixed;
+  width:100%;
+}
+
+.nav {
+  display:flex;
+  list-style-type:none;
+  font-size:20px;
+  margin:0;
+  padding:5px;
+}
+
+.nav .name{
+  color:white;
+  margin-right:auto;
+}
+
+.nav li{
+  padding: 5px 10px 10px 10px;
+}
+
+.group-title{
+  text-align:center;
+}
+
+.presentation {
+  text-align: center;
+  font-size:1.2em;
+  width:1000px;
+  margin: auto auto 20px -50px;
+  box-sizing:border-box;
+}
+
+.profil{
+  padding:0;
+  margin:30px 0px 0 20px;
+  color:black;
+  float:left;
+  width:25%;
+  height:350px;
+  border-radius: 10px;
+  border:3px solid black;
+}
+
+.profil a {
+  color:black;
+}
+
+.pricing{
+  margin:30px 0 0 80px;
+  color:black;
+  float:left;
+  width:25%;
+  height:350px;
+  border-radius:10px;
+  border: 3px solid black;
+}
+
+.process{
+  width:25%;
+  margin:30px 20px 0 0;
+  color:black;
+  height:350px;
+  border-radius:10px;
+  border:3px solid black;
+  float:right;
+}
+
+.profil h1, .process h1, .pricing h1 {
+  color:black;
+  font-size:1.5em;
+  text-align:center;
+}
+
+.profil ul, .process ul, .pricing ul {
+  font-size:0.85em;
+  list-style:none;
+  letter-spacing:.065em;
+}
+
+.profil li, .process li, .pricing li{
+  margin-top:15px;
+  margin-right: 15px;
+  font-size:1.1em;
+}
+
+.profil ul, .process ul {
+  margin-top:45px;
+}
+
+.group{
+  margin:auto;
+  width:70%;
+  height:600px;
+}
+
+.group:after{
+  content:"";
+  display:table;
+  clear:both;
+}
+
+
+.contact{
+  color:white;
+  padding: 20px 0 0 0;
+  margin-top:40px;
+  text-align:center;
+  background-color: #02b39f;
+  height:600px;
+}
+
+.contact h1 {
+  font-size:2.8em;
+}
+
+.contact p {
+  font-size:1.3em;
+}
+
+form {
+    /* Pour le centrer dans la page */
+    margin: 30px 330px auto auto;
+    width: 600px;
+    /* Pour voir les limites du formulaire */
+    padding: 1em;
+}
+
+form div + div {
+    margin-top: 2em;
+}
+
+label {
+    /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    font-size:1.3em;
+    margin-right: 5px;
+}
+
+input, textarea {
+    /* Afin de s'assurer que tous les champs textuels utilisent la même police
+       Par défaut, textarea utilise une police à espacement constant */
+    font: 1em sans-serif;
+
+    /* Pour donner la même dimension à tous les champs textuels */
+    width: 400px;
+    height:1.7em;
+    border-radius:10px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Pour harmoniser l'apparence des bordures des champs textuels */
+    border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+    /* Afin de rehausser les éléments actifs */
+    border-color: #000;
+}
+
+textarea {
+    /* Pour aligner correctement les champs multilignes et leurs étiquettes */
+    vertical-align: top;
+
+    /* Pour donner assez d'espace pour entrer du texte */
+    height: 6em;
+
+    /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
+       Cela ne marche pas avec tous les navigateurs  */
+    resize: vertical;
+}
+
+.button {
+    /* Pour positionner les boutons de la même manière que les champs textuels */
+    padding-left: 50px; /* même dimension que les étiquettes */
+}
+
+button {
+    /* Cette marge représente approximativement le même espace
+       que celui entre les étiquettes et les champs textuels */
+    margin-left: auto;
+}
+
+
+input[type="submit"]{
+  cursor:pointer;
+  margin-top: 10px;
+  font-family: "Champagne_limousines";
+  font-size:1.5em;
+  background:rgba(255, 255, 255, 0);
+  border:2px solid white;
+  color:white;
+  width: 200px;
+}
+
+.linkedin h1, p{
+  text-align: center;
+}
+
+.linkedin h1 {
+  font-size:2.8em;
+}
+
+.linkedin p {
+  font-size:1.3em;
+}
+
+.linkedin img{
+  margin: auto 370px auto 355px;
+}
