@@ -17,7 +17,9 @@
          url('fonts/Champagne_Limousines.svg#Champagne_Limousines') format('svg');
 }
 
-
+html {
+  margin: 0;
+}
 
 header{
   font-family: "Champagne_limousines";
@@ -25,11 +27,6 @@ header{
 
 body{
   font-family: "Champagne_limousines";
-  margin:0;
-}
-
-div{
-  margin:0;
 }
 
 a {
@@ -43,33 +40,34 @@ a:hover{
 
 
 header {
-  background:url(img/City.png) no-repeat top center;
+  background:url(img/background.jpg) no-repeat center;
   color:white;
   background-size:cover;
-  padding:270px;
-  height:700px;
-  box-sizing:border-box;
   text-align:center;
 }
 
-header .title {
-  margin-top:0px;
-  margin-bottom:60px;
-  padding-top:0px;
+.container {
+  width: 90%;
+}
+
+.value-prop {
+}
+
+.title {
+  margin: auto;
   font-size:3.2em;
-  font-style:normal;
   text-transform:uppercase;
 }
+
+
 
 .CTA {
   font-family: "frenchpress";
   font-size:2em;
-  font-weight: 500;
-  border:3px solid white;
+  border:1px solid white;
   border-radius: 10px;
   padding: 5px;
   transition: all .5s;
-  width:250px;
   margin: auto;
 }
 
@@ -80,14 +78,11 @@ header .title {
 .arrow {
   max-width:500px;
   max-height:100px;
-  margin-top:160px;
-  margin-left:10px;
 }
 
 .main-nav{
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color:rgba(0, 0, 0, 0);
   margin: 0;
-  position:fixed;
   width:100%;
 }
 
@@ -116,7 +111,7 @@ header .title {
   text-align: center;
   font-size:1.2em;
   width:1000px;
-  margin: auto auto 20px -50px;
+  margin: auto;
   box-sizing:border-box;
 }
 
@@ -147,7 +142,7 @@ header .title {
 
 .process{
   width:25%;
-  margin:30px 20px 0 0;
+  margin:30px 0 0;
   color:black;
   height:350px;
   border-radius:10px;
@@ -209,7 +204,7 @@ header .title {
 
 form {
     /* Pour le centrer dans la page */
-    margin: 30px 330px auto auto;
+    margin: auto;
     width: 600px;
     /* Pour voir les limites du formulaire */
     padding: 1em;
@@ -297,5 +292,5 @@ input[type="submit"]{
 }
 
 .linkedin img{
-  margin: auto 370px auto 355px;
+  margin: auto
 }
