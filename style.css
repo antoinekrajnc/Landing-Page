@@ -44,13 +44,25 @@ header {
   color:white;
   background-size:cover;
   text-align:center;
+  height:90vh;
 }
 
 .container {
-  width: 90%;
+  width: 85%;
+}
+
+
+.center-content {
+  display:flex;
+  height:90%;
+  justify-content: center;
+  align-items: center;
 }
 
 .value-prop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
@@ -58,7 +70,6 @@ header {
   font-size:3.2em;
   text-transform:uppercase;
 }
-
 
 
 .CTA {
@@ -82,8 +93,7 @@ header {
 
 .main-nav{
   background-color:rgba(0, 0, 0, 0);
-  margin: 0;
-  width:100%;
+  margin: auto;
 }
 
 .nav {
@@ -110,20 +120,15 @@ header {
 .presentation {
   text-align: center;
   font-size:1.2em;
-  width:1000px;
   margin: auto;
   box-sizing:border-box;
 }
 
 .profil{
   padding:0;
-  margin:30px 0px 0 20px;
   color:black;
-  float:left;
-  width:25%;
-  height:350px;
   border-radius: 10px;
-  border:3px solid black;
+  border:1px solid black;
 }
 
 .profil a {
@@ -131,23 +136,15 @@ header {
 }
 
 .pricing{
-  margin:30px 0 0 80px;
   color:black;
-  float:left;
-  width:25%;
-  height:350px;
   border-radius:10px;
-  border: 3px solid black;
+  border: 1px solid black;
 }
 
 .process{
-  width:25%;
-  margin:30px 0 0;
   color:black;
-  height:350px;
   border-radius:10px;
-  border:3px solid black;
-  float:right;
+  border:1px solid black;
 }
 
 .profil h1, .process h1, .pricing h1 {
@@ -163,27 +160,15 @@ header {
 }
 
 .profil li, .process li, .pricing li{
-  margin-top:15px;
-  margin-right: 15px;
   font-size:1.1em;
 }
 
-.profil ul, .process ul {
-  margin-top:45px;
-}
 
 .group{
   margin:auto;
   width:70%;
   height:600px;
 }
-
-.group:after{
-  content:"";
-  display:table;
-  clear:both;
-}
-
 
 .contact{
   color:white;
