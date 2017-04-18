@@ -1,4 +1,3 @@
-# Landing-Page
+# MOKA
 
-First website I did.
-It is a landing page that propose users to make a website for a 100$
+Marketplace that connects students to people who wants to make a website 

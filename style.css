@@ -1,12 +1,4 @@
-@font-face {
-    font-family: 'Frenchpressfreefont';
-    src: url('fonts/Frenchpressfreefont.eot');
-    src: url('fonts/Frenchpressfreefont.eot') format('embedded-opentype'),
-         url('fonts/Frenchpressfreefont.woff2') format('woff2'),
-         url('fonts/Frenchpressfreefont.woff') format('woff'),
-         url('fonts/Frenchpressfreefont.ttf') format('truetype'),
-         url('fonts/Frenchpressfreefont.svg#Frenchpressfreefont') format('svg');
-}
+
 @font-face {
     font-family: 'Champagne_Limousines';
     src: url('fonts/Champagne_Limousines.eot');
@@ -19,6 +11,11 @@
 
 html {
   margin: 0;
+  transition: all .5s;
+}
+
+.full-header{
+  height:100vh;
 }
 
 header{
@@ -30,27 +27,38 @@ body{
 }
 
 a {
-  text-decoration:none;
+  text-decoration: none;
   color:white;
 }
 
 a:hover{
-  color:lightgrey;
+  color: lightgrey;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #53D769;
 }
 
+img {
+  height:50%;
+  width: 50%;
+}
+
+.sous-titre {
+  font-size:1.4rem;
+}
+
+.pricing img {
+  height:40%;
+  width: 40%;
+}
 
 header {
-  background:url(img/background.jpg) no-repeat center;
+  background:#1a1365;
   color:white;
   background-size:cover;
   text-align:center;
-  height:90vh;
+  height:80vh;
 }
-
-.container {
-  width: 85%;
-}
-
 
 .center-content {
   display:flex;
@@ -68,27 +76,29 @@ header {
 .title {
   margin: auto;
   font-size:3.2em;
-  text-transform:uppercase;
 }
 
 
-.CTA {
-  font-family: "frenchpress";
+.CTA-projet, .CTA-etudiant {
   font-size:2em;
-  border:1px solid white;
   border-radius: 10px;
   padding: 5px;
   transition: all .5s;
   margin: auto;
+  text-shadow: 1px 1px 5px grey;
+  box-shadow: 1px 1px 5px black;
 }
 
-.CTA:hover{
-  background:rgba(255,255,255,0.1)
+.CTA-projet {
+  background-color: #53D769;
 }
 
-.arrow {
-  max-width:500px;
-  max-height:100px;
+.CTA-etudiant {
+  background-color: #e22363;
+}
+
+.CTA-projet:hover, .CTA-etudiant:hover{
+  border:none;
 }
 
 .main-nav{
@@ -119,16 +129,19 @@ header {
 
 .presentation {
   text-align: center;
-  font-size:1.2em;
   margin: auto;
   box-sizing:border-box;
+}
+
+
+.separateur {
+  background-color: #53D769;
 }
 
 .profil{
   padding:0;
   color:black;
   border-radius: 10px;
-  border:1px solid black;
 }
 
 .profil a {
@@ -138,13 +151,11 @@ header {
 .pricing{
   color:black;
   border-radius:10px;
-  border: 1px solid black;
 }
 
 .process{
   color:black;
   border-radius:10px;
-  border:1px solid black;
 }
 
 .profil h1, .process h1, .pricing h1 {
@@ -154,7 +165,7 @@ header {
 }
 
 .profil ul, .process ul, .pricing ul {
-  font-size:0.85em;
+  font-size:1em;
   list-style:none;
   letter-spacing:.065em;
 }
@@ -166,17 +177,13 @@ header {
 
 .group{
   margin:auto;
-  width:70%;
-  height:600px;
 }
 
 .contact{
   color:white;
   padding: 20px 0 0 0;
   margin-top:40px;
-  text-align:center;
-  background-color: #02b39f;
-  height:600px;
+  background-color: #e22363;
 }
 
 .contact h1 {
@@ -189,7 +196,6 @@ header {
 
 form {
     /* Pour le centrer dans la page */
-    margin: auto;
     width: 600px;
     /* Pour voir les limites du formulaire */
     padding: 1em;
@@ -241,16 +247,6 @@ textarea {
     resize: vertical;
 }
 
-.button {
-    /* Pour positionner les boutons de la même manière que les champs textuels */
-    padding-left: 50px; /* même dimension que les étiquettes */
-}
-
-button {
-    /* Cette marge représente approximativement le même espace
-       que celui entre les étiquettes et les champs textuels */
-    margin-left: auto;
-}
 
 
 input[type="submit"]{
@@ -264,18 +260,84 @@ input[type="submit"]{
   width: 200px;
 }
 
-.linkedin h1, p{
+#dernier-projets {
+  height:60vh;
+}
+
+.container {
+  position: relative;
+}
+
+
+.portfolio img, .overlay {
+  border-radius: 10px;
+}
+
+.portfolio img {
+  height: 80%;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1;
+  right: 1;
+  opacity: 0.85;
+  height:80%;
+  width: 92%;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.center-text-in-image {
+  font-size: 1.2rem;
+  padding:5px;
+  border-radius: 10px;
+  background-color: #53D769;
   text-align: center;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
 
-.linkedin h1 {
-  font-size:2.8em;
+
+h3 {
+  color:black;
 }
 
-.linkedin p {
-  font-size:1.3em;
+.link-portfolio {
+  text-shadow: 1px 1px 1px grey
 }
 
-.linkedin img{
-  margin: auto
+footer {
+  height:6vh;
+  background: #1a1365;
+}
+
+.copyright {
+  color:white;
+}
+
+@media (max-width: 1097px){
+  .center-text-in-image {
+    font-size: 1rem;
+    width:70%;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 800px) {
+  .overlay {
+    height:60%;
+    width:110%;
+  }
+  .center-text-in-image{
+    font-size: 0.85rem;
+  }
+
+  #dernier-projets {
+    height:40vh;
+  }
 }

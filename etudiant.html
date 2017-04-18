@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MOKA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="full-header">
+    <header class="full-header">
+        <div class="main-nav container p-2">
+           <ul class="nav">
+            <li class="name"><a href="index.html">MOKA</a></li>
+          </ul>
+        </div>
+        <div class="center-content">
+          <div class="d-flex flex-column align-items-center">
+            <h1 class="mt-5 mb-2">Merci de vouloir faire partie de la team!</h1>
+            <h2 class="mb-5 sous-titre">Ecris nous un peu sur toi et nous te répondront dans les 24h pour que tu fasses partie de notre super team de devs!</h2>
+            <form action="https://formspree.io/antoinekrajnc@gmail.com" method="post">
+                <div>
+                  <label for=nom>Nom</label>
+                  <input type="text" name="nom_etudiant">
+                </div>
+                <div>
+                  <label>Email</label>
+                  <input type="email" name="email_etudiant">
+                </div>
+                <div>
+                  <label>Mon Experience</label>
+                  <textarea name="message_etudiant"></textarea>
+                </div>
+            <div class="button d-flex justify-content-center">
+              <input type="hidden" name="_next" value="thanksEtudiant.html" />
+              <input type="submit" value="Envoyer">
+            </div>
+            </form>
+          </div>
+        </div>
+      </header>
+  </body>
+  </html>
