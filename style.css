@@ -306,17 +306,10 @@ footer {
   color:white;
 }
 
-@media (max-width: 1024px) and (min-width: 800px) {
-  .overlay {
-    height:60%;
-    width:110%;
-  }
-  .center-text-in-image{
-    font-size: 0.85rem;
-  }
+@media (max-width: 1024px) and (min-width: 451px) {
 
   #dernier-projets {
-    height:40vh;
+    height:auto;
   }
 }
 
@@ -359,7 +352,4 @@ footer {
     height:auto;
   }
 
-  .portfolio {
-
-  }
 }
