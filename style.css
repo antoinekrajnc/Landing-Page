@@ -196,7 +196,7 @@ header {
 
 form {
     /* Pour le centrer dans la page */
-    width: 600px;
+    width: 100%;
     /* Pour voir les limites du formulaire */
     padding: 1em;
 }
@@ -207,11 +207,10 @@ form div + div {
 
 label {
     /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
-    display: inline-block;
-    width: 90px;
+    width: 120px;
     text-align: right;
     font-size:1.3em;
-    margin-right: 5px;
+    margin-right: 1rem;
 }
 
 input, textarea {
@@ -220,11 +219,9 @@ input, textarea {
     font: 1em sans-serif;
 
     /* Pour donner la même dimension à tous les champs textuels */
-    width: 400px;
+    width: 80%;
     height:1.7em;
     border-radius:10px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 
     /* Pour harmoniser l'apparence des bordures des champs textuels */
     border: 1px solid #999;
@@ -257,8 +254,9 @@ input[type="submit"]{
   background:rgba(255, 255, 255, 0);
   border:2px solid white;
   color:white;
-  width: 200px;
+  width: 120px;
   margin-bottom: 30px;
+  padding:5px;
 }
 
 #dernier-projets {
@@ -298,7 +296,7 @@ h3 {
 }
 
 footer {
-  height:6vh;
+  height: auto;
   background: #1a1365;
 }
 
@@ -306,14 +304,8 @@ footer {
   color:white;
 }
 
-@media (max-width: 1024px) and (min-width: 451px) {
 
-  #dernier-projets {
-    height:auto;
-  }
-}
-
-@media(max-width:450px) {
+@media(max-width:1024px) {
 
   #about {
     margin:auto 10px;
@@ -335,18 +327,11 @@ footer {
     width:90%;
   }
 
-  input, textarea {
-    width:60%;
-  }
-
   .sous-titre {
     text-align: center;
     margin: 10px;
   }
 
-  .button input {
-    width:35%;
-  }
 
   #dernier-projets {
     height:auto;
